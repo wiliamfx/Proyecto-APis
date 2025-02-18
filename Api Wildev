@@ -1,0 +1,316 @@
+{
+	"info": {
+		"_postman_id": "e9d4f691-cfb2-4444-ba2f-d8879c6aa64f",
+		"name": "Proyecto APIS Terminado",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42417682"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9500/api/v1/clientes/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9500/api/v1/clientes/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9500",
+					"path": [
+						"api",
+						"v1",
+						"clientes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9500/api/v1/clientes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tipoCliente\": \"Individual\",\r\n    \"nombre\": \"Juan Pérez\",\r\n    \"documentoId\": 1,  \r\n    \"direccion\": \"Calle Falsa 123\",\r\n    \"telefono\": \"123456789\",\r\n    \"email\": \"juan.perez@example.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9500/api/v1/clientes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9500",
+					"path": [
+						"api",
+						"v1",
+						"clientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9500/api/v1/clientes/2",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9500/api/v1/clientes/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9500",
+					"path": [
+						"api",
+						"v1",
+						"clientes",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9500/api/v1/clientes/3",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tipoCliente\": \"Individual\",\r\n    \"nombre\": \"Juan Pérez\",\r\n    \"documentoId\": 1,  \r\n    \"direccion\": \"Calle Falsa 123\",\r\n    \"telefono\": \"123456789\",\r\n    \"email\": \"juan.perez@example.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9500/api/v1/clientes/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9500",
+					"path": [
+						"api",
+						"v1",
+						"clientes",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9500/api/documentos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9500/api/documentos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9500",
+					"path": [
+						"api",
+						"documentos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9500/api/documentos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tipoDocumento\": \"DNI\",\r\n    \"numeroDocumento\": \"987456321\",\r\n    \"fechaEmision\": \"2020-01-01\",  // Formato de fecha: YYYY-MM-DD\r\n    \"pais\": \"Perú\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9500/api/documentos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9500",
+					"path": [
+						"api",
+						"documentos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9500/api/documentos/2",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"tipoDocumento\": \"DNI\",\r\n    \"numeroDocumento\": \"123987456\",\r\n    \"fechaEmision\": \"2020-01-01T00:00:00.000+00:00\",\r\n    \"pais\": \"Perú\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9500/api/documentos/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9500",
+					"path": [
+						"api",
+						"documentos",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9500/api/documentos/2",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9500/api/documentos/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9500",
+					"path": [
+						"api",
+						"documentos",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9500/api/cuentas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9500/api/cuentas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9500",
+					"path": [
+						"api",
+						"cuentas"
+					]
+				},
+				"description": "Cuentas Usuario"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9500/api/cuentas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"numeroCuenta\": \"963258741\",\r\n    \"tipoCuenta\": \"Credito\",\r\n    \"banco\": \"Banco Cuzco\",\r\n    \"saldo\": 1500.00,\r\n    \"clienteId\": 3 \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9500/api/cuentas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9500",
+					"path": [
+						"api",
+						"cuentas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9500/api/cuentas/5",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \r\n    \"numeroCuenta\": \"365214320\",\r\n    \"tipoCuenta\": \"Debito\",\r\n    \"banco\": \"Banco CONTINENTAL\",\r\n    \"saldo\": 6300.00,\r\n    \"clienteId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9500/api/cuentas/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9500",
+					"path": [
+						"api",
+						"cuentas",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9500/api/cuentas/5",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9500/api/cuentas/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9500",
+					"path": [
+						"api",
+						"cuentas",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
